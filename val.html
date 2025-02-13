@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Surprise</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #ffccd5;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #d63384;
+            font-size: 3rem;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        img {
+            width: 300px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            animation: fadeIn 3s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: white;
+            background-color: #d63384;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #b0236f;
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Valentine's Day! 💖</h1>
+    <div class="container">
+        <img src="c:\Users\ASUS\Downloads\21775b41d8af214873b6f78906602643.jpg" alt="Valentine's Image">
+        <p>Will you be my Valentine? 💘</p>
+        <button onclick="playMusic()">Play Our Song 🎶</button>
+        <iframe id="valentineMusic" width="560" height="315" src="https://www.youtube.com/embed/0VlefWNnpok?autoplay=1&loop=1" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <script>
+        function playMusic() {
+            document.getElementById("valentineMusic").style.display = "block";
+        }
+    </script>
+</body>
+</html>
